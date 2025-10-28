@@ -38,6 +38,8 @@ function Login() {
           required
         />
         <button type="submit">Entrar</button>
+        <button className='cadastro' type="button" onClick={() => navigate('/cadastro')}>Crie seu cadastro</button> {/* Botão de cadastro */}
+        {/* <a className='cadastro' href="/cadastro">Crie seu cadastro</a> */}
       </form>
       {error && <p className="error-message">{error}</p>}
     </div>
